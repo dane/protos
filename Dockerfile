@@ -11,6 +11,10 @@ RUN go install \
 
 FROM bufbuild/buf:0.33.0
 
+LABEL org.opencontainers.image.source="https://github.com/dane/protos"
+LABEL org.opencontainers.image.authors="Dane Harrigan"
+LABEL org.opencontainers.image,licenses="Mozilla 2.0"
+
 WORKDIR /opt/protos
 
 ENV PATH=$PATH:/opt/protos/bin
