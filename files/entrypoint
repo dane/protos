@@ -1,0 +1,15 @@
+#!/bin/sh
+
+case "$1" in
+  "lint")
+    buf check lint
+  ;;
+  "generate")
+    buf generate
+  ;;
+  *)
+    echo "Commands:"
+    echo "  lint       Lint all proto files"
+    echo "  generate   Generate gRPC messages and services"
+    exit 1
+esac

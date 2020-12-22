@@ -1,0 +1,11 @@
+version: v1beta1
+build:
+  roots:
+    - src/proto
+lint:
+  use:
+    - DEFAULT
+    - UNARY_RPC
+breaking:
+  use:
+    - FILE
