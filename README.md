@@ -6,9 +6,10 @@ not, `generate` and `lint` will remain the same commands.
 
 ## Usage
 
-The following are ways of using the Docker image. All usages assume the project
-source is mounted to `/opt/protos/src` and proto files exist under a `proto`
-directory.
+The following are ways of using the Docker image. All usages assume:
+- The project source is mounted to `/opt/protos/src`
+- Proto files exist under a `proto` directory
+- There is a `buf.yaml` and `buf.gen.yaml` file at the project root
 
 ### From Docker
 
